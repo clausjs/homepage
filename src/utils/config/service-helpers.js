@@ -486,6 +486,10 @@ export function cleanServiceGroups(groups) {
 
           // technitium
           range,
+          
+          // barassistant
+          barId,
+          maxCocktails
         } = cleanedService.widget;
 
         let fieldsList = fields;
@@ -511,6 +515,10 @@ export function cleanServiceGroups(groups) {
           if (repositoryId) cleanedService.widget.repositoryId = repositoryId;
         }
 
+        if (type === "barassistant") {
+            if (barId) cleanedService.widget.barId = barId;
+            if (maxCocktails) cleanedService.widget.maxCocktails = maxCocktails;
+        }
         if (type === "coinmarketcap") {
           if (currency) cleanedService.widget.currency = currency;
           if (symbols) cleanedService.widget.symbols = symbols;
