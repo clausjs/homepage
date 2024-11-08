@@ -368,6 +368,9 @@ export function cleanServiceGroups(groups) {
           repositoryId,
           userEmail,
 
+          // beszel
+          systemId,
+
           // calendar
           firstDayInWeek,
           integrations,
@@ -519,6 +522,11 @@ export function cleanServiceGroups(groups) {
             if (barId) cleanedService.widget.barId = barId;
             if (maxCocktails) cleanedService.widget.maxCocktails = maxCocktails;
         }
+        
+        if (type === "beszel") {
+          if (systemId) cleanedService.widget.systemId = systemId;
+        }
+
         if (type === "coinmarketcap") {
           if (currency) cleanedService.widget.currency = currency;
           if (symbols) cleanedService.widget.symbols = symbols;
