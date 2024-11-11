@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mnd",
         "days": "d",
         "hours": "t",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "Navn",
+        "address": "Adresse",
+        "last_seen": "Sist sett",
+        "status": "Status",
+        "online": "På nett",
+        "offline": "Frakoblet"
+    },
+    "beszel": {
+        "name": "Navn",
+        "systems": "Systems",
+        "up": "Oppe",
+        "status": "Status",
+        "updated": "Oppdatert",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

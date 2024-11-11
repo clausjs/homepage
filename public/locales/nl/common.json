@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mnd",
         "days": "d",
         "hours": "u",
@@ -852,7 +852,7 @@
     },
     "mailcow": {
         "domains": "Domeinen",
-        "mailboxes": "Mailboxes",
+        "mailboxes": "Mailboxen",
         "mails": "Mails",
         "storage": "Opslag"
     },
@@ -947,11 +947,36 @@
         "disaster": "Disaster"
     },
     "lubelogger": {
-        "vehicle": "Vehicle",
-        "vehicles": "Vehicles",
-        "serviceRecords": "Service Records",
-        "reminders": "Reminders",
-        "nextReminder": "Next Reminder",
-        "none": "None"
+        "vehicle": "Voertuig",
+        "vehicles": "Voertuigen",
+        "serviceRecords": "Service Historie",
+        "reminders": "Herinneringen",
+        "nextReminder": "Volgende Herinnering",
+        "none": "Geen"
+    },
+    "vikunja": {
+        "projects": "Actieve Projecten",
+        "tasks7d": "Taken Die Deze Week Af Moeten Zijn",
+        "tasksOverdue": "Achterstallige Taken",
+        "tasksInProgress": "Taken In Uitvoering"
+    },
+    "headscale": {
+        "name": "Naam",
+        "address": "Adres",
+        "last_seen": "Laatst Gezien",
+        "status": "Status",
+        "online": "Bereikbaar",
+        "offline": "Offline"
+    },
+    "beszel": {
+        "name": "Naam",
+        "systems": "Systems",
+        "up": "Online",
+        "status": "Status",
+        "updated": "Bijgewerkt",
+        "cpu": "CPU",
+        "memory": "GEH",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

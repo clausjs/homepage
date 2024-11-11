@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "ay",
         "days": "g",
         "hours": "sa",
@@ -853,7 +853,7 @@
     "mailcow": {
         "domains": "Etki Alanları",
         "mailboxes": "Mailboxes",
-        "mails": "Mails",
+        "mails": "Postalar",
         "storage": "Depo"
     },
     "netdata": {
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Bitişi Bu Hafta Olan Görevler",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "İsim",
+        "address": "Adres",
+        "last_seen": "Son Görülme",
+        "status": "Durum",
+        "online": "Çevrimiçi",
+        "offline": "Çevrimdışı"
+    },
+    "beszel": {
+        "name": "İsim",
+        "systems": "Systems",
+        "up": "Yükleme",
+        "status": "Durum",
+        "updated": "Güncellendi",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "ma",
         "days": "d",
         "hours": "h",
@@ -947,11 +947,36 @@
         "disaster": "Ramp"
     },
     "lubelogger": {
-        "vehicle": "Vehicle",
-        "vehicles": "Vehicles",
-        "serviceRecords": "Service Records",
-        "reminders": "Reminders",
-        "nextReminder": "Next Reminder",
-        "none": "None"
+        "vehicle": "Voertuig",
+        "vehicles": "Voertuie",
+        "serviceRecords": "Diensrekords",
+        "reminders": "Herinneringe",
+        "nextReminder": "Volgende Herinnering",
+        "none": "Geen"
+    },
+    "vikunja": {
+        "projects": "Aktiewe Projekte",
+        "tasks7d": "Take Hierdie week",
+        "tasksOverdue": "Agterstallige Take",
+        "tasksInProgress": "Take Aan Die Gang"
+    },
+    "headscale": {
+        "name": "Naam",
+        "address": "Adres",
+        "last_seen": "Laaste Gesien",
+        "status": "Status",
+        "online": "Aanlyn",
+        "offline": "Vanlyn"
+    },
+    "beszel": {
+        "name": "Naam",
+        "systems": "Systems",
+        "up": "Op",
+        "status": "Status",
+        "updated": "Opgedateer",
+        "cpu": "SVE",
+        "memory": "GEH",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

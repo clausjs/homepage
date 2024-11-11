@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "Mo.",
         "days": "d",
         "hours": "h",
@@ -305,7 +305,7 @@
         "ping": "Ping"
     },
     "portainer": {
-        "running": "Werden ausgeführt",
+        "running": "Wird ausgeführt",
         "stopped": "Gestoppt",
         "total": "Gesamt"
     },
@@ -953,5 +953,30 @@
         "reminders": "Erinnerungen",
         "nextReminder": "Nächste Erinnerung",
         "none": "Keine"
+    },
+    "vikunja": {
+        "projects": "Aktive Projekte",
+        "tasks7d": "Diese Woche fällige Aufgaben",
+        "tasksOverdue": "Überfällige Aufgaben",
+        "tasksInProgress": "Aufgaben in Arbeit"
+    },
+    "headscale": {
+        "name": "Name",
+        "address": "Adresse",
+        "last_seen": "Zuletzt gesehen",
+        "status": "Status",
+        "online": "Online",
+        "offline": "Offline"
+    },
+    "beszel": {
+        "name": "Name",
+        "systems": "Systems",
+        "up": "Senden",
+        "status": "Status",
+        "updated": "Aktualisiert",
+        "cpu": "CPU",
+        "memory": "RAM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

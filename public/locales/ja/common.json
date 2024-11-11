@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "月",
         "days": "日",
         "hours": "時間",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "名前",
+        "address": "アドレス",
+        "last_seen": "最終日時",
+        "status": "状態",
+        "online": "オンライン",
+        "offline": "オフライン"
+    },
+    "beszel": {
+        "name": "名前",
+        "systems": "Systems",
+        "up": "稼働",
+        "status": "状態",
+        "updated": "更新済",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

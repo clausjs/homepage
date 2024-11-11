@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mes",
         "days": "d",
         "hours": "h",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "Nom",
+        "address": "Adreça",
+        "last_seen": "Vist per darrer cop",
+        "status": "Estat",
+        "online": "En línia",
+        "offline": "Fora de línia"
+    },
+    "beszel": {
+        "name": "Nom",
+        "systems": "Systems",
+        "up": "Actiu",
+        "status": "Estat",
+        "updated": "Actualitzat",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

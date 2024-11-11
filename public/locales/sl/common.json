@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mes",
         "days": "d",
         "hours": "u",
@@ -953,5 +953,30 @@
         "reminders": "Opomniki",
         "nextReminder": "Naslednji opomnik",
         "none": "Brez"
+    },
+    "vikunja": {
+        "projects": "Aktivni projekti",
+        "tasks7d": "Potekla opravila tega tedna",
+        "tasksOverdue": "Potekla opravila",
+        "tasksInProgress": "Tekoča opravila"
+    },
+    "headscale": {
+        "name": "Naziv",
+        "address": "Naslov",
+        "last_seen": "Viden",
+        "status": "Stanje",
+        "online": "Na spletu",
+        "offline": "Ni povezan"
+    },
+    "beszel": {
+        "name": "Naziv",
+        "systems": "Sistemi",
+        "up": "Povezan",
+        "status": "Stanje",
+        "updated": "Posodobljen",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "Mreža"
     }
 }

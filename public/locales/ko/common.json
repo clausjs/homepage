@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mo",
         "days": "d",
         "hours": "h",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "이름",
+        "address": "주소",
+        "last_seen": "마지막 접속",
+        "status": "상태",
+        "online": "온라인",
+        "offline": "중지"
+    },
+    "beszel": {
+        "name": "이름",
+        "systems": "Systems",
+        "up": "Up",
+        "status": "상태",
+        "updated": "Updated",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

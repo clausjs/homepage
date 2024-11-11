@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mes",
         "days": "d",
         "hours": "h",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "Meno",
+        "address": "Adresa",
+        "last_seen": "Naposledy videné",
+        "status": "Stav",
+        "online": "Online",
+        "offline": "Nedostupný"
+    },
+    "beszel": {
+        "name": "Meno",
+        "systems": "Systems",
+        "up": "Nahrávanie",
+        "status": "Stav",
+        "updated": "Aktualizované",
+        "cpu": "CPU",
+        "memory": "RAM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

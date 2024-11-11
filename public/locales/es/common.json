@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "me",
         "days": "d",
         "hours": "h",
@@ -953,5 +953,30 @@
         "reminders": "Recordatorios",
         "nextReminder": "Siguiente recordatorio",
         "none": "Nada"
+    },
+    "vikunja": {
+        "projects": "Proyectos activos",
+        "tasks7d": "Tareas que vencen esta semana",
+        "tasksOverdue": "Tareas vencidas",
+        "tasksInProgress": "Tareas en progreso"
+    },
+    "headscale": {
+        "name": "Nombre",
+        "address": "Dirección",
+        "last_seen": "Visto por última vez",
+        "status": "Estado",
+        "online": "En línea",
+        "offline": "Desconectado"
+    },
+    "beszel": {
+        "name": "Nombre",
+        "systems": "Systems",
+        "up": "Activo",
+        "status": "Estado",
+        "updated": "Actualizado",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

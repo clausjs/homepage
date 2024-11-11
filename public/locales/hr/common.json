@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mj",
         "days": "dan(a)",
         "hours": "h",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "Ime",
+        "address": "Adresa",
+        "last_seen": "Zadnje viđeno",
+        "status": "Stanje",
+        "online": "Online",
+        "offline": "Offline"
+    },
+    "beszel": {
+        "name": "Ime",
+        "systems": "Systems",
+        "up": "Dostupno",
+        "status": "Stanje",
+        "updated": "Aktualizirano",
+        "cpu": "CPU",
+        "memory": "MEM",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

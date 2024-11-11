@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mo",
         "days": "d",
         "hours": "ч",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "Name",
+        "address": "Address",
+        "last_seen": "Последно видян",
+        "status": "Статус",
+        "online": "Online",
+        "offline": "Изключен"
+    },
+    "beszel": {
+        "name": "Name",
+        "systems": "Systems",
+        "up": "Up",
+        "status": "Статус",
+        "updated": "Updated",
+        "cpu": "Процесор",
+        "memory": "Памет",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

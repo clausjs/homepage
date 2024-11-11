@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mo",
         "days": "d",
         "hours": "h",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "Name",
+        "address": "Address",
+        "last_seen": "Last Seen",
+        "status": "สถานะ",
+        "online": "Online",
+        "offline": "ออฟไลน์"
+    },
+    "beszel": {
+        "name": "Name",
+        "systems": "Systems",
+        "up": "Up",
+        "status": "สถานะ",
+        "updated": "Updated",
+        "cpu": "ซีพียู",
+        "memory": "เมม",
+        "disk": "Disk",
+        "network": "NET"
     }
 }

@@ -13,7 +13,7 @@
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
         "relativeDate": "{{value, relativeDate}}",
-        "uptime": "{{value, uptime}}",
+        "duration": "{{value, duration}}",
         "months": "mo",
         "days": "d",
         "hours": "h",
@@ -953,5 +953,30 @@
         "reminders": "Reminders",
         "nextReminder": "Next Reminder",
         "none": "None"
+    },
+    "vikunja": {
+        "projects": "Active Projects",
+        "tasks7d": "Tasks Due This Week",
+        "tasksOverdue": "Overdue Tasks",
+        "tasksInProgress": "Tasks In Progress"
+    },
+    "headscale": {
+        "name": "Όνομα",
+        "address": "Διεύθυνση",
+        "last_seen": "Τελευταία Σύνδεση",
+        "status": "Κατάσταση",
+        "online": "Συνδεδεμένοι",
+        "offline": "Εκτός σύνδεσης"
+    },
+    "beszel": {
+        "name": "Όνομα",
+        "systems": "Systems",
+        "up": "Ping up",
+        "status": "Κατάσταση",
+        "updated": "Ενημερώθηκε",
+        "cpu": "Επεξεργαστής",
+        "memory": "Μνήμη",
+        "disk": "Disk",
+        "network": "NET"
     }
 }
