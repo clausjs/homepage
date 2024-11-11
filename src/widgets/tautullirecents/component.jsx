@@ -95,7 +95,7 @@ export default function Component({ service }) {
     if (showTVData && tvError) error = tvError;
     if (showMusicData && musicError) error = musicError;
 
-    if (error) return <Container service={service} error="Error" />;
+    if (error) return <Container service={service} error={error} />;
   }
 
   if ((showMovieData && !movieData) || (showTVData && !tvData) || (showMusicData && !musicData)) {
