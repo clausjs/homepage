@@ -1,21 +1,21 @@
 import credentialedProxyHandler from "utils/proxy/handlers/credentialed";
 
-const widget =  {
+const widget = {
   api: "{url}/bar/api/{endpoint}",
   proxyHandler: credentialedProxyHandler,
 
-  mappings:  {
-    bars:  {
-      endpoint: "bars"
+  mappings: {
+    bars: {
+      endpoint: "bars",
     },
     totalCocktails: {
       endpoint: "cocktails",
-      params: ['bar_id', "per_page"]
+      params: ["bar_id", "per_page"],
     },
     shelfCocktails: {
       endpoint: "shelf/cocktails",
-      params: ['bar_id']
-    }
+      params: ["bar_id"],
+    },
   },
 };
 

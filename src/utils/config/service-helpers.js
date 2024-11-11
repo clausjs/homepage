@@ -489,10 +489,10 @@ export function cleanServiceGroups(groups) {
 
           // technitium
           range,
-          
+
           // barassistant
           barId,
-          maxCocktails
+          maxCocktails,
         } = cleanedService.widget;
 
         let fieldsList = fields;
@@ -519,10 +519,10 @@ export function cleanServiceGroups(groups) {
         }
 
         if (type === "barassistant") {
-            if (barId) cleanedService.widget.barId = barId;
-            if (maxCocktails) cleanedService.widget.maxCocktails = maxCocktails;
+          if (barId) cleanedService.widget.barId = barId;
+          if (maxCocktails) cleanedService.widget.maxCocktails = maxCocktails;
         }
-        
+
         if (type === "beszel") {
           if (systemId) cleanedService.widget.systemId = systemId;
         }
