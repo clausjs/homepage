@@ -1,7 +1,6 @@
-
 # Tautulli Recents Homepage Widget
 
-This is a Tautulli based widget for [Homepage](https://github.com/gethomepage/homepage). It was originally written in/and tested for `v0.9.11`. While I will attempt to maintain it moving forward the only version it is _guranteed_ to work on will be v0.9.11 
+This is a Tautulli based widget for [Homepage](https://github.com/gethomepage/homepage). It was originally written in/and tested for `v0.9.11`. While I will attempt to maintain it moving forward the only version it is _guranteed_ to work on will be v0.9.11
 
 ---
 
@@ -16,6 +15,7 @@ Introducing the `tautullirecents` widget.
 ## Display
 
 ### Number of results
+
 The `tautullirecents` widget is customizable for what data it will display. Using the `fields` property in the widget settings, it can configure which media types the widget will query for.
 
 Acceptable fields are: `movie`, `tv`, or `music`. The configuration can supply any combination of the valid results or none. If none are supplied, all 3 will be queried. The widget will always display 6 results.
@@ -26,7 +26,9 @@ Acceptable fields are: `movie`, `tv`, or `music`. The configuration can supply a
 - Supplying no fields will default in all 3 media types
 
 ### Date formatting
+
 The `added_at` display can customized with the same parameters used with the customapi approach in the previously mentioned inspirations for this project. If these are no configured the default display properties will be:
+
 ```
 format: 'relativeDate',
 scale: 1000,
@@ -38,44 +40,43 @@ color: 'theme'
 
 **NOTE:** To enable the ability to customize the date display you'll have to uncomment the code in [/src/utils/config/service-helpers.js](/src/utils/config/service-helpers.js) and rebuild so your widget confirguration will pass these properties to the component
 
-
-
-
 ## services.yml
 
 ### One widget per media type
+
 ```yml
 - My Service Group:
-  - Recent Movies:
-    icon: radarr.png
-    widget:
-      type: tautullirecents
-      url: http://<IP:PORT>
-      key: someTautulliApiKey
-      fields: ['movie']
-  - Recent TV:
-    icon: sonarr.png
-    widget:
-      type: tautullirecents
-      url: http://<IP:PORT>
-      key: someTautulliApiKey
-      fields: ['tv']
-  - Recent Music:
-    icon: lidarr.png
-    widget:
-      type: tautullirecents
-      url: http://<IP:PORT>
-      key: someTautulliApiKey
-      fields: ['music']
+    - Recent Movies:
+      icon: radarr.png
+      widget:
+        type: tautullirecents
+        url: http://<IP:PORT>
+        key: someTautulliApiKey
+        fields: ["movie"]
+    - Recent TV:
+      icon: sonarr.png
+      widget:
+        type: tautullirecents
+        url: http://<IP:PORT>
+        key: someTautulliApiKey
+        fields: ["tv"]
+    - Recent Music:
+      icon: lidarr.png
+      widget:
+        type: tautullirecents
+        url: http://<IP:PORT>
+        key: someTautulliApiKey
+        fields: ["music"]
 ```
 
 ### One widget for all media types
+
 ```yml
 - My Service Group:
-  - Recent Media:
-    icon: radarr.png
-    widget:
-      type: tautullirecents
-      url: http://<IP:PORT>
-      key: someTautulliApiKey
+    - Recent Media:
+      icon: radarr.png
+      widget:
+        type: tautullirecents
+        url: http://<IP:PORT>
+        key: someTautulliApiKey
 ```
