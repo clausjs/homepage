@@ -37,6 +37,7 @@ export default async function credentialedProxyHandler(req, res, map) {
       } else if (
         [
           "authentik",
+          "barassistant",
           "cloudflared",
           "ghostfolio",
           "headscale",
