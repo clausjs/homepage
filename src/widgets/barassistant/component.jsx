@@ -27,21 +27,24 @@ export default function Component({ service }) {
   if (!barsData || !totalCocktailsData || !shelfCocktailsData) {
     return (
       <Container service={service}>
-        <Block label="Bar(s)" />
-        <Block label="Total Cocktails" />
-        <Block label="Shelf Cocktails" />
+        <Block label="barassistant.bars" />
+        <Block label="barassistant.totalCocktails" />
+        <Block label="barassistant.shelfCocktails" />
       </Container>
     );
   }
 
   return (
     <Container service={service}>
+      <Block label="barassistant.bars" value={t("common.number", { value: barsData.data.length })} />
       <Block
-        label={barsData.data.length > 1 ? "Bars" : "Bar"}
-        value={t("common.number", { value: barsData.data.length })}
+        label="barassistant.totalCockatails"
+        value={t("common.number", { value: totalCocktailsData.meta.total })}
       />
-      <Block label="Total Cocktails" value={t("common.number", { value: totalCocktailsData.meta.total })} />
-      <Block label="Shelf Cocktails" value={t("common.number", { value: shelfCocktailsData.data.length })} />
+      <Block
+        label="barassistant.shelfCocktails"
+        value={t("common.number", { value: shelfCocktailsData.data.length })}
+      />
     </Container>
   );
 }
