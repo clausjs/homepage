@@ -489,6 +489,10 @@ export function cleanServiceGroups(groups) {
 
           // technitium
           range,
+
+          // barassistant
+          barId,
+          maxCocktails,
         } = cleanedService.widget;
 
         let fieldsList = fields;
@@ -512,6 +516,11 @@ export function cleanServiceGroups(groups) {
         if (type === "azuredevops") {
           if (userEmail) cleanedService.widget.userEmail = userEmail;
           if (repositoryId) cleanedService.widget.repositoryId = repositoryId;
+        }
+
+        if (type === "barassistant") {
+          if (barId) cleanedService.widget.barId = barId;
+          if (maxCocktails) cleanedService.widget.maxCocktails = maxCocktails;
         }
 
         if (type === "beszel") {

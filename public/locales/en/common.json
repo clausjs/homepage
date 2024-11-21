@@ -150,6 +150,11 @@
         "sent": "Sent",
         "externalIPAddress": "Ext. IP"
     },
+    "barassistant": {
+        "bars": "Bars",
+        "totalCocktails": "Total Cocktails",
+        "shelfCocktails": "Shelf Cocktails"
+    },
     "caddy": {
         "upstreams": "Upstreams",
         "requests": "Current requests",
