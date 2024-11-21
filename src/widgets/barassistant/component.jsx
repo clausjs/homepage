@@ -37,10 +37,7 @@ export default function Component({ service }) {
   return (
     <Container service={service}>
       <Block label="barassistant.bars" value={t("common.number", { value: barsData.data.length })} />
-      <Block
-        label="barassistant.totalCockatails"
-        value={t("common.number", { value: totalCocktailsData.meta.total })}
-      />
+      <Block label="barassistant.totalCocktails" value={t("common.number", { value: totalCocktailsData.meta.total })} />
       <Block
         label="barassistant.shelfCocktails"
         value={t("common.number", { value: shelfCocktailsData.data.length })}
