@@ -32,7 +32,6 @@ function getColor(value, color) {
   }
 }
 
-// eslint-disable-next-line no-unused-vars
 const getMediaName = (item, mediaType) => {
   let mediaName = "";
   switch (mediaType) {
@@ -52,7 +51,6 @@ const getMediaName = (item, mediaType) => {
   return mediaName;
 };
 
-// eslint-disable-next-line no-unused-vars
 const formatTime = (t, item, meta) => {
   // eslint-disable-next-line no-param-reassign
   if (!meta) meta = DEFAULT_DATE_DISPLAY;
@@ -85,78 +83,59 @@ export default function Component({ service }) {
   if (fields.find((field) => !defaultFields.includes(field)))
     return <Container service={service} error="Media type must be at least one of 'movie' or 'tv' or 'music'" />;
 
-  const showMovieData = fields.includes("movie");
-  const showTVData = fields.includes("tv");
-  const showMusicData = fields.includes("music");
-
-  if ((showMovieData && movieError) || (showTVData && tvError) || (showMusicData && musicError)) {
+  if (movieError || tvError || musicError) {
     let error;
-    if (showMovieData && movieError) error = movieError;
-    if (showTVData && tvError) error = tvError;
-    if (showMusicData && musicError) error = musicError;
-
+    if (movieError) error = movieError;
+    if (tvError) error = tvError;
+    if (musicError) error = musicError;
     if (error) return <Container service={service} error={error} />;
   }
 
-  if ((showMovieData && !movieData) || (showTVData && !tvData) || (showMusicData && !musicData)) {
-    let errorMessage = "Unable to fetch data for ";
-
-    const errors = [];
-    if (showMovieData && !movieData) errors.push("movie");
-    if (showTVData && !tvData) errors.push("tv");
-    if (showMusicData && !musicData) errors.push("music");
-
-    errorMessage += errors.join(" or ");
-    errorMessage += " from TauTulli";
-    return <Container service={service} error={errorMessage} />;
+  if (!movieData || !tvData || !musicData) {
+    <Container service={service} error="Unable to fetch media data from api" />;
   }
+
+  const getData = (data) => {
+    if (!data) return [];
+    return data.response?.data?.recently_added;
+  };
 
   return (
     <Container service={service}>
-      <div label={`tautullirecents.${fields[0]}`} className="flex flex-col w-full">
-        {showMovieData &&
-          movieData?.response?.data?.recently_added?.map((item) => (
-            <div
-              key="tautullirecents.movie"
-              className="bg-theme-200/50 dark:bg-theme-900/20 rounded m-1 flex-1 flex flex-row items-center justify-between p-1 text-xs"
-            >
-              <div className="scrolling-text font-bold pl-2">{getMediaName(item, "movie")}</div>
-              <div className="flex flex-row text-right">
-                <div className={`font-thin mr-2 ${getColor(item.added_at, widget?.date?.color)}`}>
-                  {formatTime(t, item, widget?.date)}
+      {fields.map((field) => {
+        let data;
+        switch (field) {
+          case "movie":
+            data = getData(movieData);
+            break;
+          case "tv":
+            data = getData(tvData);
+            break;
+          case "music":
+            data = getData(musicData);
+            break;
+          default:
+            break;
+        }
+
+        return (
+          <div label={`tautullirecents.${field}`} className="flex flex-col w-full">
+            {data?.map((item) => (
+              <div
+                key={`tautullirecents.${field}`}
+                className="bg-theme-200/50 dark:bg-theme-900/20 rounded m-1 flex-1 flex flex-row items-center justify-between p-1 text-xs"
+              >
+                <div className="scrolling-text font-bold pl-2">{getMediaName(item, field)}</div>
+                <div className="flex flex-row text-right">
+                  <div className={`font-thin mr-2 ${getColor(item.added_at, widget?.date?.color)}`}>
+                    {formatTime(t, item, widget?.date)}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        {showTVData &&
-          tvData?.response?.data?.recently_added?.map((item) => (
-            <div
-              key="tautullirecents.tv"
-              className="bg-theme-200/50 dark:bg-theme-900/20 rounded m-1 flex-1 flex flex-row items-center justify-between p-1 text-xs"
-            >
-              <div className="scrolling-text font-bold pl-2">{getMediaName(item, "tv")}</div>
-              <div className="flex flex-row text-right">
-                <div className={`font-thin mr-2 ${getColor(item.added_at, widget?.date?.color)}`}>
-                  {formatTime(t, item, widget?.date)}
-                </div>
-              </div>
-            </div>
-          ))}
-        {showMusicData &&
-          musicData?.response?.data?.recently_added?.map((item) => (
-            <div
-              key="tautullirecents.music"
-              className="bg-theme-200/50 dark:bg-theme-900/20 rounded m-1 flex-1 flex flex-row items-center justify-between p-1 text-xs"
-            >
-              <div className="scrolling-text font-bold pl-2">{getMediaName(item, "music")}</div>
-              <div className="flex flex-row text-right">
-                <div className={`font-thin mr-2 ${getColor(item.added_at, widget?.date?.color)}`}>
-                  {formatTime(t, item, widget?.date)}
-                </div>
-              </div>
-            </div>
-          ))}
-      </div>
+            ))}
+          </div>
+        );
+      })}
     </Container>
   );
 }
