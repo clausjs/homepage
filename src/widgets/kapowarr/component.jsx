@@ -8,8 +8,6 @@ export default function Component({ service }) {
   const { t } = useTranslation();
   const { widget } = service;
 
-  const { fields } = widget;
-
   const { data: monitored, error: monitoredErrors } = useWidgetAPI(widget, "volumes", { filter: "monitored" });
   const { data: queue, error: queueErrors } = useWidgetAPI(widget, "queue");
   const { data: wanted, error: wantedErrors } = useWidgetAPI(widget, "wanted", { filter: "wanted" });
