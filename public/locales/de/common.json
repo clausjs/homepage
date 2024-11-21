@@ -265,6 +265,13 @@
         "missingEpisodes": "Fehlende Episoden",
         "missingMovies": "Fehlende Filme"
     },
+    "kapowarr": {
+        "wanted": "Gesucht",
+        "queued": "In Warteschlange",
+        "monitored": "Überwacht",
+        "history": "Verlauf",
+        "blocked": "Blockiert"
+    },
     "ombi": {
         "pending": "Ausstehend",
         "approved": "Genehmigt",

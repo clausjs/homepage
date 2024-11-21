@@ -265,6 +265,13 @@
         "missingEpisodes": "Missing Episodes",
         "missingMovies": "Missing Movies"
     },
+    "kapowarr": {
+        "wanted": "Wanted",
+        "queued": "Queued",
+        "monitored": "Monitored",
+        "history": "History",
+        "blocked": "Blocked"
+    },
     "ombi": {
         "pending": "Pending",
         "approved": "Approved",
