@@ -474,6 +474,9 @@ export function cleanServiceGroups(groups) {
           watchlist,
           showUSMarketStatus,
 
+          // tautullirecents
+          // date, Uncomment to allow configuration of the date display for tautullirecents
+
           // truenas
           enablePools,
           nasType,
@@ -637,6 +640,9 @@ export function cleanServiceGroups(groups) {
         if (type === "frigate") {
           if (enableRecentEvents !== undefined) cleanedService.widget.enableRecentEvents = enableRecentEvents;
         }
+        // if (type === "tautullirecents") {
+        //   if (date !== undefined) cleanedService.widget.date = date;
+        // } Uncomment to allow configuration of the date display for tautullirecents
         if (type === "technitium") {
           if (range !== undefined) cleanedService.widget.range = range;
         }
