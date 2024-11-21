@@ -119,10 +119,10 @@ export default function Component({ service }) {
         }
 
         return (
-          <div label={`tautullirecents.${field}`} className="flex flex-col w-full">
+          <div key={`tautullirecents.${field}`} label={`tautullirecents.${field}`} className="flex flex-col w-full">
             {data?.map((item) => (
               <div
-                key={`tautullirecents.${field}`}
+                key={item.title}
                 className="bg-theme-200/50 dark:bg-theme-900/20 rounded m-1 flex-1 flex flex-row items-center justify-between p-1 text-xs"
               >
                 <div className="scrolling-text font-bold pl-2">{getMediaName(item, field)}</div>
